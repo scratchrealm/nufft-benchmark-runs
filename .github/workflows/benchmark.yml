@@ -9,11 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-        repository: 'scratchrealm/finufft-benchmark'
-    - name: Install finufft
-      run: pip install finufft
-    - name: Install finufft-benchmark
-      run: pip install .
+    - name: Install latest finufft
+      run: pip install --upgrade finufft
+    - name: Install latest finufft-benchmark
+      run: pip install --upgrade finufft-benchmark
     - name: run benchmark
-      run: finufft-benchmark run
+      run: finufft-benchmark run --config config.yml
