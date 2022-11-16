@@ -5,7 +5,7 @@ on:
 
 jobs:
   Benchmark:
-    runs-on: trop
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
