@@ -5,7 +5,7 @@ on:
 
 jobs:
   Benchmark:
-    runs-on: ubuntu-latest
+    runs-on: trom
 
     steps:
     - uses: actions/checkout@v3
